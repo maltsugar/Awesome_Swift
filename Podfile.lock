@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.9.1)
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.1.0)
+  - SnapKit (4.2.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - RxAlamofire
+  - SnapKit
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - RxAlamofire
+    - RxSwift
+    - SnapKit
+    - YYKit
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 9f631c9cdd4c1fd07adf37c5ae4b2d1c2cb9d1f1
+
+COCOAPODS: 1.9.1
