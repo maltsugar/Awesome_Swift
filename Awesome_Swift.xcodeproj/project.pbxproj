@@ -13,6 +13,8 @@
 		B925F710248612D000F76267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F70E248612D000F76267 /* Main.storyboard */; };
 		B925F712248612D200F76267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B925F711248612D200F76267 /* Assets.xcassets */; };
 		B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F713248612D200F76267 /* LaunchScreen.storyboard */; };
+		B925F73224861CF500F76267 /* QMUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F72F24861CF500F76267 /* QMUIButton.m */; };
+		B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,11 @@
 		B925F714248612D200F76267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B925F716248612D200F76267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B925F7212486161C00F76267 /* Awesome_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Awesome_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B925F72E24861CF500F76267 /* QMUICommonDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUICommonDefines.h; sourceTree = "<group>"; };
+		B925F72F24861CF500F76267 /* QMUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIButton.m; sourceTree = "<group>"; };
+		B925F73124861CF500F76267 /* QMUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIButton.h; sourceTree = "<group>"; };
+		B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QMUILite.m"; sourceTree = "<group>"; };
+		B925F73724861FEA00F76267 /* NSAttributedString+QMUILite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QMUILite.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +54,6 @@
 				AC1A7BAF0CFD75CEDC741231 /* Pods-Awesome_Swift.debug.xcconfig */,
 				6DD1A72197A3303705A66FD8 /* Pods-Awesome_Swift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,6 +130,7 @@
 		B925F7202486153200F76267 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B925F72C24861CF500F76267 /* QMUIKit_Lite */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -161,6 +168,18 @@
 			children = (
 			);
 			path = Consts;
+			sourceTree = "<group>";
+		};
+		B925F72C24861CF500F76267 /* QMUIKit_Lite */ = {
+			isa = PBXGroup;
+			children = (
+				B925F73724861FEA00F76267 /* NSAttributedString+QMUILite.h */,
+				B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */,
+				B925F72E24861CF500F76267 /* QMUICommonDefines.h */,
+				B925F73124861CF500F76267 /* QMUIButton.h */,
+				B925F72F24861CF500F76267 /* QMUIButton.m */,
+			);
+			path = QMUIKit_Lite;
 			sourceTree = "<group>";
 		};
 		BC57EE81D58480AA3152341D /* Frameworks */ = {
@@ -269,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B925F73224861CF500F76267 /* QMUIButton.m in Sources */,
+				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
 			);
