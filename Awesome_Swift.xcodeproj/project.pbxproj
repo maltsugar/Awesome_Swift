@@ -15,6 +15,28 @@
 		B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F713248612D200F76267 /* LaunchScreen.storyboard */; };
 		B925F73224861CF500F76267 /* QMUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F72F24861CF500F76267 /* QMUIButton.m */; };
 		B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */; };
+		B949C9892486288B00855B20 /* TOSearchBarLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B949C9732486288B00855B20 /* TOSearchBarLocalizable.strings */; };
+		B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9822486288B00855B20 /* TOSearchBar.m */; };
+		B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9852486288B00855B20 /* TOSearchBar+Assets.m */; };
+		B949C98C2486288B00855B20 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9872486288B00855B20 /* XCFileManager.m */; };
+		B949C9AC2486289500855B20 /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C98E2486289400855B20 /* NSArray+YYAdd.m */; };
+		B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9902486289400855B20 /* YYDiskCache.m */; };
+		B949C9AE2486289500855B20 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9922486289400855B20 /* YYCache.m */; };
+		B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9962486289400855B20 /* YYKVStorage.m */; };
+		B949C9B02486289500855B20 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9972486289400855B20 /* YYMemoryCache.m */; };
+		B949C9B12486289500855B20 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9982486289400855B20 /* NSNumber+YYAdd.m */; };
+		B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C99A2486289400855B20 /* UIColor+YYAdd.m */; };
+		B949C9B32486289500855B20 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C99D2486289400855B20 /* UIDevice+YYAdd.m */; };
+		B949C9B42486289500855B20 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C99E2486289400855B20 /* UIApplication+YYAdd.m */; };
+		B949C9B52486289500855B20 /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C99F2486289400855B20 /* NSObject+YYAdd.m */; };
+		B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9A12486289400855B20 /* NSData+YYAdd.m */; };
+		B949C9B72486289500855B20 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9A52486289500855B20 /* NSDate+YYAdd.m */; };
+		B949C9B82486289500855B20 /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9A72486289500855B20 /* NSString+YYAdd.m */; };
+		B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9AA2486289500855B20 /* UIControl+YYAdd.m */; };
+		B949C9BD248628BC00855B20 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9BB248628BC00855B20 /* Reachability.m */; };
+		B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9BF248628C700855B20 /* MBProgressHUD.m */; };
+		B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */; };
+		B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B949C9C3248628C700855B20 /* MBProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +56,62 @@
 		B925F73124861CF500F76267 /* QMUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIButton.h; sourceTree = "<group>"; };
 		B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QMUILite.m"; sourceTree = "<group>"; };
 		B925F73724861FEA00F76267 /* NSAttributedString+QMUILite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QMUILite.h"; sourceTree = "<group>"; };
+		B949C9742486288B00855B20 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9752486288B00855B20 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOSearchBarLocalizable.strings"; sourceTree = "<group>"; };
+		B949C9762486288B00855B20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9772486288B00855B20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9782486288B00855B20 /* TOSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSearchBar.h; sourceTree = "<group>"; };
+		B949C9792486288B00855B20 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C97A2486288B00855B20 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C97B2486288B00855B20 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C97C2486288B00855B20 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C97D2486288B00855B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C97E2486288B00855B20 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/TOSearchBarLocalizable.strings"; sourceTree = "<group>"; };
+		B949C97F2486288B00855B20 /* TOSearchBar+Assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TOSearchBar+Assets.h"; sourceTree = "<group>"; };
+		B949C9802486288B00855B20 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9812486288B00855B20 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9822486288B00855B20 /* TOSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSearchBar.m; sourceTree = "<group>"; };
+		B949C9832486288B00855B20 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9842486288B00855B20 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
+		B949C9852486288B00855B20 /* TOSearchBar+Assets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TOSearchBar+Assets.m"; sourceTree = "<group>"; };
+		B949C9872486288B00855B20 /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileManager.m; sourceTree = "<group>"; };
+		B949C9882486288B00855B20 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
+		B949C98E2486289400855B20 /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9902486289400855B20 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		B949C9912486289400855B20 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		B949C9922486289400855B20 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		B949C9932486289400855B20 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		B949C9942486289400855B20 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		B949C9952486289400855B20 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		B949C9962486289400855B20 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		B949C9972486289400855B20 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		B949C9982486289400855B20 /* NSNumber+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9992486289400855B20 /* NSDate+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YYAdd.h"; sourceTree = "<group>"; };
+		B949C99A2486289400855B20 /* UIColor+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YYAdd.m"; sourceTree = "<group>"; };
+		B949C99B2486289400855B20 /* YYKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
+		B949C99C2486289400855B20 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		B949C99D2486289400855B20 /* UIDevice+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YYAdd.m"; sourceTree = "<group>"; };
+		B949C99E2486289400855B20 /* UIApplication+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YYAdd.m"; sourceTree = "<group>"; };
+		B949C99F2486289400855B20 /* NSObject+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9A02486289400855B20 /* NSString+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A12486289400855B20 /* NSData+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9A22486289400855B20 /* NSNumber+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A32486289400855B20 /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A42486289500855B20 /* UIColor+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A52486289500855B20 /* NSDate+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9A62486289500855B20 /* NSObject+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A72486289500855B20 /* NSString+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9A82486289500855B20 /* UIDevice+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9A92486289500855B20 /* UIApplication+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9AA2486289500855B20 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		B949C9AB2486289500855B20 /* NSData+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YYAdd.h"; sourceTree = "<group>"; };
+		B949C9BB248628BC00855B20 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B949C9BC248628BC00855B20 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B949C9BF248628C700855B20 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B949C9C0248628C700855B20 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		B949C9C1248628C700855B20 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		B949C9C3248628C700855B20 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +208,12 @@
 		B925F7202486153200F76267 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B949C9BE248628C700855B20 /* MBProgressHUD */,
 				B925F72C24861CF500F76267 /* QMUIKit_Lite */,
+				B949C9BA248628BC00855B20 /* Reachability */,
+				B949C9722486288B00855B20 /* TOSearchBar */,
+				B949C9862486288B00855B20 /* XCFileManager */,
+				B949C98D2486289400855B20 /* YYKit */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -182,6 +265,92 @@
 			path = QMUIKit_Lite;
 			sourceTree = "<group>";
 		};
+		B949C9722486288B00855B20 /* TOSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9782486288B00855B20 /* TOSearchBar.h */,
+				B949C9822486288B00855B20 /* TOSearchBar.m */,
+				B949C97F2486288B00855B20 /* TOSearchBar+Assets.h */,
+				B949C9852486288B00855B20 /* TOSearchBar+Assets.m */,
+				B949C9732486288B00855B20 /* TOSearchBarLocalizable.strings */,
+			);
+			path = TOSearchBar;
+			sourceTree = "<group>";
+		};
+		B949C9862486288B00855B20 /* XCFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9882486288B00855B20 /* XCFileManager.h */,
+				B949C9872486288B00855B20 /* XCFileManager.m */,
+			);
+			path = XCFileManager;
+			sourceTree = "<group>";
+		};
+		B949C98D2486289400855B20 /* YYKit */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9A32486289400855B20 /* NSArray+YYAdd.h */,
+				B949C98E2486289400855B20 /* NSArray+YYAdd.m */,
+				B949C9AB2486289500855B20 /* NSData+YYAdd.h */,
+				B949C9A12486289400855B20 /* NSData+YYAdd.m */,
+				B949C9992486289400855B20 /* NSDate+YYAdd.h */,
+				B949C9A52486289500855B20 /* NSDate+YYAdd.m */,
+				B949C9A22486289400855B20 /* NSNumber+YYAdd.h */,
+				B949C9982486289400855B20 /* NSNumber+YYAdd.m */,
+				B949C9A62486289500855B20 /* NSObject+YYAdd.h */,
+				B949C99F2486289400855B20 /* NSObject+YYAdd.m */,
+				B949C9A02486289400855B20 /* NSString+YYAdd.h */,
+				B949C9A72486289500855B20 /* NSString+YYAdd.m */,
+				B949C9A92486289500855B20 /* UIApplication+YYAdd.h */,
+				B949C99E2486289400855B20 /* UIApplication+YYAdd.m */,
+				B949C9A42486289500855B20 /* UIColor+YYAdd.h */,
+				B949C99A2486289400855B20 /* UIColor+YYAdd.m */,
+				B949C99C2486289400855B20 /* UIControl+YYAdd.h */,
+				B949C9AA2486289500855B20 /* UIControl+YYAdd.m */,
+				B949C9A82486289500855B20 /* UIDevice+YYAdd.h */,
+				B949C99D2486289400855B20 /* UIDevice+YYAdd.m */,
+				B949C98F2486289400855B20 /* YYCache */,
+				B949C99B2486289400855B20 /* YYKitMacro.h */,
+			);
+			path = YYKit;
+			sourceTree = "<group>";
+		};
+		B949C98F2486289400855B20 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9902486289400855B20 /* YYDiskCache.m */,
+				B949C9912486289400855B20 /* YYKVStorage.h */,
+				B949C9922486289400855B20 /* YYCache.m */,
+				B949C9932486289400855B20 /* YYMemoryCache.h */,
+				B949C9942486289400855B20 /* YYDiskCache.h */,
+				B949C9952486289400855B20 /* YYCache.h */,
+				B949C9962486289400855B20 /* YYKVStorage.m */,
+				B949C9972486289400855B20 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		B949C9BA248628BC00855B20 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9BC248628BC00855B20 /* Reachability.h */,
+				B949C9BB248628BC00855B20 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B949C9BE248628C700855B20 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B949C9C3248628C700855B20 /* MBProgressHUD.bundle */,
+				B949C9C1248628C700855B20 /* MBProgressHUD.h */,
+				B949C9BF248628C700855B20 /* MBProgressHUD.m */,
+				B949C9C0248628C700855B20 /* MBProgressHUD+MJ.h */,
+				B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		BC57EE81D58480AA3152341D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +370,7 @@
 				B925F701248612D000F76267 /* Sources */,
 				B925F702248612D000F76267 /* Frameworks */,
 				B925F703248612D000F76267 /* Resources */,
+				093814F654C43619C2A9F372 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +404,18 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				"zh-Hans",
+				ja,
+				es,
+				da,
+				it,
+				ko,
+				"zh-Hant",
+				pl,
+				ru,
+				fr,
+				nl,
 			);
 			mainGroup = B925F6FC248612D000F76267;
 			productRefGroup = B925F706248612D000F76267 /* Products */;
@@ -252,6 +434,8 @@
 			files = (
 				B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */,
 				B925F712248612D200F76267 /* Assets.xcassets in Resources */,
+				B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */,
+				B949C9892486288B00855B20 /* TOSearchBarLocalizable.strings in Resources */,
 				B925F710248612D000F76267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +443,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		093814F654C43619C2A9F372 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Awesome_Swift/Pods-Awesome_Swift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Awesome_Swift/Pods-Awesome_Swift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Awesome_Swift/Pods-Awesome_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		307F46B6D7238F8FBAF54E5B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,10 +489,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B949C9AC2486289500855B20 /* NSArray+YYAdd.m in Sources */,
+				B949C9B72486289500855B20 /* NSDate+YYAdd.m in Sources */,
+				B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */,
+				B949C9B02486289500855B20 /* YYMemoryCache.m in Sources */,
+				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
+				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
+				B949C9B32486289500855B20 /* UIDevice+YYAdd.m in Sources */,
 				B925F73224861CF500F76267 /* QMUIButton.m in Sources */,
+				B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */,
+				B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */,
+				B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */,
+				B949C9B82486289500855B20 /* NSString+YYAdd.m in Sources */,
+				B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */,
+				B949C9AE2486289500855B20 /* YYCache.m in Sources */,
+				B949C9B42486289500855B20 /* UIApplication+YYAdd.m in Sources */,
+				B949C9B12486289500855B20 /* NSNumber+YYAdd.m in Sources */,
+				B949C9BD248628BC00855B20 /* Reachability.m in Sources */,
+				B949C98C2486288B00855B20 /* XCFileManager.m in Sources */,
+				B949C9B52486289500855B20 /* NSObject+YYAdd.m in Sources */,
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
+				B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */,
+				B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +533,27 @@
 				B925F714248612D200F76267 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B949C9732486288B00855B20 /* TOSearchBarLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B949C9742486288B00855B20 /* de */,
+				B949C9752486288B00855B20 /* zh-Hans */,
+				B949C9762486288B00855B20 /* ja */,
+				B949C9772486288B00855B20 /* en */,
+				B949C9792486288B00855B20 /* es */,
+				B949C97A2486288B00855B20 /* da */,
+				B949C97B2486288B00855B20 /* it */,
+				B949C97C2486288B00855B20 /* ko */,
+				B949C97D2486288B00855B20 /* Base */,
+				B949C97E2486288B00855B20 /* zh-Hant */,
+				B949C9802486288B00855B20 /* pl */,
+				B949C9812486288B00855B20 /* ru */,
+				B949C9832486288B00855B20 /* fr */,
+				B949C9842486288B00855B20 /* nl */,
+			);
+			name = TOSearchBarLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
