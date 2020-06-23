@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F713248612D200F76267 /* LaunchScreen.storyboard */; };
 		B925F73224861CF500F76267 /* QMUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F72F24861CF500F76267 /* QMUIButton.m */; };
 		B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */; };
+		B936120424A18B2100F64482 /* AWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120324A18B2100F64482 /* AWTabBarController.swift */; };
+		B936120624A18C0400F64482 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120524A18C0400F64482 /* Consts.swift */; };
+		B936120B24A1965900F64482 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120A24A1965900F64482 /* SwiftHEXColors.swift */; };
+		B936121024A197D300F64482 /* AWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120F24A197D300F64482 /* AWBaseViewController.swift */; };
+		B936121324A19BAA00F64482 /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936121224A19BAA00F64482 /* AppTools.swift */; };
 		B949C9892486288B00855B20 /* TOSearchBarLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B949C9732486288B00855B20 /* TOSearchBarLocalizable.strings */; };
 		B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9822486288B00855B20 /* TOSearchBar.m */; };
 		B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9852486288B00855B20 /* TOSearchBar+Assets.m */; };
@@ -56,6 +61,11 @@
 		B925F73124861CF500F76267 /* QMUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIButton.h; sourceTree = "<group>"; };
 		B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QMUILite.m"; sourceTree = "<group>"; };
 		B925F73724861FEA00F76267 /* NSAttributedString+QMUILite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QMUILite.h"; sourceTree = "<group>"; };
+		B936120324A18B2100F64482 /* AWTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWTabBarController.swift; sourceTree = "<group>"; };
+		B936120524A18C0400F64482 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		B936120A24A1965900F64482 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
+		B936120F24A197D300F64482 /* AWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBaseViewController.swift; sourceTree = "<group>"; };
+		B936121224A19BAA00F64482 /* AppTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
 		B949C9742486288B00855B20 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
 		B949C9752486288B00855B20 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOSearchBarLocalizable.strings"; sourceTree = "<group>"; };
 		B949C9762486288B00855B20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
@@ -201,6 +211,9 @@
 		B925F71F2486152800F76267 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B936120E24A197AB00F64482 /* Mine */,
+				B936120D24A197A400F64482 /* More */,
+				B936120C24A1979D00F64482 /* Home */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -221,6 +234,8 @@
 		B925F7272486172200F76267 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B936120324A18B2100F64482 /* AWTabBarController.swift */,
+				B936120F24A197D300F64482 /* AWBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -228,6 +243,7 @@
 		B925F7282486173000F76267 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B936120A24A1965900F64482 /* SwiftHEXColors.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 		B925F72A2486174E00F76267 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B936121224A19BAA00F64482 /* AppTools.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -249,6 +266,7 @@
 		B925F72B2486177300F76267 /* Consts */ = {
 			isa = PBXGroup;
 			children = (
+				B936120524A18C0400F64482 /* Consts.swift */,
 			);
 			path = Consts;
 			sourceTree = "<group>";
@@ -263,6 +281,27 @@
 				B925F72F24861CF500F76267 /* QMUIButton.m */,
 			);
 			path = QMUIKit_Lite;
+			sourceTree = "<group>";
+		};
+		B936120C24A1979D00F64482 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B936120D24A197A400F64482 /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		B936120E24A197AB00F64482 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		B949C9722486288B00855B20 /* TOSearchBar */ = {
@@ -318,13 +357,13 @@
 		B949C98F2486289400855B20 /* YYCache */ = {
 			isa = PBXGroup;
 			children = (
+				B949C9952486289400855B20 /* YYCache.h */,
+				B949C9922486289400855B20 /* YYCache.m */,
+				B949C9942486289400855B20 /* YYDiskCache.h */,
 				B949C9902486289400855B20 /* YYDiskCache.m */,
 				B949C9912486289400855B20 /* YYKVStorage.h */,
-				B949C9922486289400855B20 /* YYCache.m */,
-				B949C9932486289400855B20 /* YYMemoryCache.h */,
-				B949C9942486289400855B20 /* YYDiskCache.h */,
-				B949C9952486289400855B20 /* YYCache.h */,
 				B949C9962486289400855B20 /* YYKVStorage.m */,
+				B949C9932486289400855B20 /* YYMemoryCache.h */,
 				B949C9972486289400855B20 /* YYMemoryCache.m */,
 			);
 			path = YYCache;
@@ -489,9 +528,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B936121324A19BAA00F64482 /* AppTools.swift in Sources */,
 				B949C9AC2486289500855B20 /* NSArray+YYAdd.m in Sources */,
 				B949C9B72486289500855B20 /* NSDate+YYAdd.m in Sources */,
 				B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */,
+				B936120624A18C0400F64482 /* Consts.swift in Sources */,
 				B949C9B02486289500855B20 /* YYMemoryCache.m in Sources */,
 				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
 				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
@@ -500,17 +541,20 @@
 				B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */,
 				B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */,
 				B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */,
+				B936120424A18B2100F64482 /* AWTabBarController.swift in Sources */,
 				B949C9B82486289500855B20 /* NSString+YYAdd.m in Sources */,
 				B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */,
 				B949C9AE2486289500855B20 /* YYCache.m in Sources */,
 				B949C9B42486289500855B20 /* UIApplication+YYAdd.m in Sources */,
 				B949C9B12486289500855B20 /* NSNumber+YYAdd.m in Sources */,
 				B949C9BD248628BC00855B20 /* Reachability.m in Sources */,
+				B936121024A197D300F64482 /* AWBaseViewController.swift in Sources */,
 				B949C98C2486288B00855B20 /* XCFileManager.m in Sources */,
 				B949C9B52486289500855B20 /* NSObject+YYAdd.m in Sources */,
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
+				B936120B24A1965900F64482 /* SwiftHEXColors.swift in Sources */,
 				B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */,
 				B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */,
 			);
