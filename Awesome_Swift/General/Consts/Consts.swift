@@ -8,33 +8,6 @@
 
 import Foundation
 
-fileprivate class PrintHelper {
-    static let shared = PrintHelper()
-    private init(){}
-    
-    lazy var dateFormatter: DateFormatter = {
-        let df = AppTools.shared.dateFmtter
-        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        return df
-    }()
-    
-    var timesInfo: String {
-        get {
-            return dateFormatter.string(from: Date())
-        }
-    }
-}
-/// 自定义Log
-func printLog<T>(_ message: T,
-                 file: String = #file,
-                 method: String = #function,
-                 line: Int = #line)
-{
-    #if DEBUG
-    print("\(PrintHelper.shared.timesInfo) [\((file as NSString).lastPathComponent)[\(line)], \(method)]: \(message)")
-    #endif
-}
-
 let kStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
 let kNavBarHeight = CGFloat(44)
 let kTopHeight = (kStatusBarHeight + kNavBarHeight)
@@ -157,6 +130,34 @@ func kRadianToDegrees(radian: CGFloat) -> CGFloat {
     return (radian * 180.0) / CGFloat(Double.pi)
 }
 
+
+// Print
+fileprivate class PrintHelper {
+    static let shared = PrintHelper()
+    private init(){}
+    
+    lazy var dateFormatter: DateFormatter = {
+        let df = AppTools.shared.dateFmtter
+        df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return df
+    }()
+    
+    var timesInfo: String {
+        get {
+            return dateFormatter.string(from: Date())
+        }
+    }
+}
+/// 自定义Log
+func printLog<T>(_ message: T,
+                 file: String = #file,
+                 method: String = #function,
+                 line: Int = #line)
+{
+    #if DEBUG
+    print("\(PrintHelper.shared.timesInfo) [\((file as NSString).lastPathComponent)[\(line)], \(method)]: \(message)")
+    #endif
+}
 
 // 防止多次调用
 //#define kGYCancelActionInTime(_seconds_) \

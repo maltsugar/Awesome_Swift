@@ -20,6 +20,12 @@
 		B936120B24A1965900F64482 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120A24A1965900F64482 /* SwiftHEXColors.swift */; };
 		B936121024A197D300F64482 /* AWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120F24A197D300F64482 /* AWBaseViewController.swift */; };
 		B936121324A19BAA00F64482 /* AppTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936121224A19BAA00F64482 /* AppTools.swift */; };
+		B936121724A1ACBE00F64482 /* DemoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936121524A1ACBE00F64482 /* DemoViewController2.swift */; };
+		B936121824A1ACBE00F64482 /* DemoViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B936121624A1ACBE00F64482 /* DemoViewController2.xib */; };
+		B936121B24A1ACD800F64482 /* DemoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936121924A1ACD800F64482 /* DemoViewController1.swift */; };
+		B936121C24A1ACD800F64482 /* DemoViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B936121A24A1ACD800F64482 /* DemoViewController1.xib */; };
+		B936121F24A1ACF300F64482 /* DemoViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936121D24A1ACF300F64482 /* DemoViewController0.swift */; };
+		B936122024A1ACF300F64482 /* DemoViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = B936121E24A1ACF300F64482 /* DemoViewController0.xib */; };
 		B949C9892486288B00855B20 /* TOSearchBarLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B949C9732486288B00855B20 /* TOSearchBarLocalizable.strings */; };
 		B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9822486288B00855B20 /* TOSearchBar.m */; };
 		B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9852486288B00855B20 /* TOSearchBar+Assets.m */; };
@@ -42,6 +48,8 @@
 		B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9BF248628C700855B20 /* MBProgressHUD.m */; };
 		B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */; };
 		B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B949C9C3248628C700855B20 /* MBProgressHUD.bundle */; };
+		B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */; };
+		B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,12 @@
 		B936120A24A1965900F64482 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
 		B936120F24A197D300F64482 /* AWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBaseViewController.swift; sourceTree = "<group>"; };
 		B936121224A19BAA00F64482 /* AppTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTools.swift; sourceTree = "<group>"; };
+		B936121524A1ACBE00F64482 /* DemoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController2.swift; sourceTree = "<group>"; };
+		B936121624A1ACBE00F64482 /* DemoViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController2.xib; sourceTree = "<group>"; };
+		B936121924A1ACD800F64482 /* DemoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController1.swift; sourceTree = "<group>"; };
+		B936121A24A1ACD800F64482 /* DemoViewController1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController1.xib; sourceTree = "<group>"; };
+		B936121D24A1ACF300F64482 /* DemoViewController0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController0.swift; sourceTree = "<group>"; };
+		B936121E24A1ACF300F64482 /* DemoViewController0.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController0.xib; sourceTree = "<group>"; };
 		B949C9742486288B00855B20 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
 		B949C9752486288B00855B20 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TOSearchBarLocalizable.strings"; sourceTree = "<group>"; };
 		B949C9762486288B00855B20 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/TOSearchBarLocalizable.strings; sourceTree = "<group>"; };
@@ -122,6 +136,9 @@
 		B949C9C1248628C700855B20 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		B949C9C3248628C700855B20 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWRootNavigationController.swift; sourceTree = "<group>"; };
+		B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColor.h"; sourceTree = "<group>"; };
+		B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +253,7 @@
 			children = (
 				B936120324A18B2100F64482 /* AWTabBarController.swift */,
 				B936120F24A197D300F64482 /* AWBaseViewController.swift */,
+				B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -243,6 +261,7 @@
 		B925F7282486173000F76267 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B9C6EE4524A3262F00BB9EA5 /* Category */,
 				B936120A24A1965900F64482 /* SwiftHEXColors.swift */,
 			);
 			path = Extension;
@@ -286,6 +305,8 @@
 		B936120C24A1979D00F64482 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B936121D24A1ACF300F64482 /* DemoViewController0.swift */,
+				B936121E24A1ACF300F64482 /* DemoViewController0.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -293,6 +314,8 @@
 		B936120D24A197A400F64482 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				B936121924A1ACD800F64482 /* DemoViewController1.swift */,
+				B936121A24A1ACD800F64482 /* DemoViewController1.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -300,6 +323,8 @@
 		B936120E24A197AB00F64482 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				B936121524A1ACBE00F64482 /* DemoViewController2.swift */,
+				B936121624A1ACBE00F64482 /* DemoViewController2.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -390,6 +415,15 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		B9C6EE4524A3262F00BB9EA5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */,
+				B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		BC57EE81D58480AA3152341D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,7 +507,10 @@
 			files = (
 				B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */,
 				B925F712248612D200F76267 /* Assets.xcassets in Resources */,
+				B936121824A1ACBE00F64482 /* DemoViewController2.xib in Resources */,
 				B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */,
+				B936122024A1ACF300F64482 /* DemoViewController0.xib in Resources */,
+				B936121C24A1ACD800F64482 /* DemoViewController1.xib in Resources */,
 				B949C9892486288B00855B20 /* TOSearchBarLocalizable.strings in Resources */,
 				B925F710248612D000F76267 /* Main.storyboard in Resources */,
 			);
@@ -536,11 +573,13 @@
 				B949C9B02486289500855B20 /* YYMemoryCache.m in Sources */,
 				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
 				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
+				B936121F24A1ACF300F64482 /* DemoViewController0.swift in Sources */,
 				B949C9B32486289500855B20 /* UIDevice+YYAdd.m in Sources */,
 				B925F73224861CF500F76267 /* QMUIButton.m in Sources */,
 				B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */,
 				B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */,
 				B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */,
+				B936121B24A1ACD800F64482 /* DemoViewController1.swift in Sources */,
 				B936120424A18B2100F64482 /* AWTabBarController.swift in Sources */,
 				B949C9B82486289500855B20 /* NSString+YYAdd.m in Sources */,
 				B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */,
@@ -550,10 +589,13 @@
 				B949C9BD248628BC00855B20 /* Reachability.m in Sources */,
 				B936121024A197D300F64482 /* AWBaseViewController.swift in Sources */,
 				B949C98C2486288B00855B20 /* XCFileManager.m in Sources */,
+				B936121724A1ACBE00F64482 /* DemoViewController2.swift in Sources */,
 				B949C9B52486289500855B20 /* NSObject+YYAdd.m in Sources */,
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
+				B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */,
+				B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */,
 				B936120B24A1965900F64482 /* SwiftHEXColors.swift in Sources */,
 				B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */,
 				B949C98A2486288B00855B20 /* TOSearchBar.m in Sources */,
