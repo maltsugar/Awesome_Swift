@@ -14,4 +14,23 @@ class AppTools {
     // =================
     
     let dateFmtter = DateFormatter()
+    let tabBarController = AWTabBarController()
+//    let loginNav =
+    
+    
+    
+    
+    
+    func startApp(loginVC: Bool = false) {
+        guard let window = kAppDelegate?.window else {
+            return
+        }
+        
+        if (loginVC) {
+            
+        }else {
+            window?.rootViewController = self.tabBarController
+        }
+    }
+    
 }
