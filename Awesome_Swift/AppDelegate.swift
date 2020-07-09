@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         // 设置根视图
-        AppTools.shared.startApp()
+        AppTools.shared.startApp(loginVC: true)
         
         return true
     }

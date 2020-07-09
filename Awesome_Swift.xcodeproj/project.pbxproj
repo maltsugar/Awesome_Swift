@@ -47,8 +47,11 @@
 		B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9BF248628C700855B20 /* MBProgressHUD.m */; };
 		B949C9C5248628C700855B20 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */; };
 		B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B949C9C3248628C700855B20 /* MBProgressHUD.bundle */; };
+		B988427324AC751000599D8E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B988427224AC751000599D8E /* UIViewControllerExtension.swift */; };
 		B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */; };
 		B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */; };
+		B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */; };
+		B9CFD94624B6B75B004F9B85 /* AWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,9 +137,12 @@
 		B949C9C1248628C700855B20 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B949C9C2248628C700855B20 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		B949C9C3248628C700855B20 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		B988427224AC751000599D8E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWRootNavigationController.swift; sourceTree = "<group>"; };
 		B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColor.h"; sourceTree = "<group>"; };
 		B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColor.m"; sourceTree = "<group>"; };
+		B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWLoginViewController.swift; sourceTree = "<group>"; };
+		B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,7 @@
 		B925F71F2486152800F76267 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B9CFD94224B6B72B004F9B85 /* Login */,
 				B936120E24A197AB00F64482 /* Mine */,
 				B936120D24A197A400F64482 /* More */,
 				B936120C24A1979D00F64482 /* Home */,
@@ -260,6 +267,7 @@
 			children = (
 				B9C6EE4524A3262F00BB9EA5 /* Category */,
 				B936120A24A1965900F64482 /* SwiftHEXColors.swift */,
+				B988427224AC751000599D8E /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -421,6 +429,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		B9CFD94224B6B72B004F9B85 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */,
+				B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		BC57EE81D58480AA3152341D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +521,7 @@
 			files = (
 				B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */,
 				B925F712248612D200F76267 /* Assets.xcassets in Resources */,
+				B9CFD94624B6B75B004F9B85 /* AWLoginViewController.xib in Resources */,
 				B936121824A1ACBE00F64482 /* DemoViewController2.xib in Resources */,
 				B949C9C6248628C700855B20 /* MBProgressHUD.bundle in Resources */,
 				B936122024A1ACF300F64482 /* DemoViewController0.xib in Resources */,
@@ -573,6 +591,7 @@
 				B949C9B32486289500855B20 /* UIDevice+YYAdd.m in Sources */,
 				B925F73224861CF500F76267 /* QMUIButton.m in Sources */,
 				B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */,
+				B988427324AC751000599D8E /* UIViewControllerExtension.swift in Sources */,
 				B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */,
 				B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */,
 				B936121B24A1ACD800F64482 /* DemoViewController1.swift in Sources */,
@@ -590,6 +609,7 @@
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
+				B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */,
 				B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */,
 				B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */,
 				B936120B24A1965900F64482 /* SwiftHEXColors.swift in Sources */,
@@ -754,6 +774,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJTDMP87P7;
 				INFOPLIST_FILE = Awesome_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -776,6 +797,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BJTDMP87P7;
 				INFOPLIST_FILE = Awesome_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
