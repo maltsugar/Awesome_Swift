@@ -9,5 +9,5 @@ target 'Awesome_Swift' do
     pod 'RTRootNavigationController'
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
-
+    pod 'KakaJSON'
 end

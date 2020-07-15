@@ -75,6 +75,8 @@ class AppTools {
         }else {
             setDisplayVC(vc: tabBarController)
         }
+        
+        _ = AWConfigManager.shared
     }
     
     func afterLoginSucceed() {

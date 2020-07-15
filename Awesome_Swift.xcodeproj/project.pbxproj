@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		05C5DDA50FA77C400A5B9814 /* libPods-Awesome_Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D91DB40F83A2B721B42094A /* libPods-Awesome_Swift.a */; };
+		B924199F24BEC2C000CA92AA /* AWUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924199E24BEC2C000CA92AA /* AWUserManager.swift */; };
+		B92419A124BEC2CE00CA92AA /* AWConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92419A024BEC2CE00CA92AA /* AWConfigManager.swift */; };
+		B92419A324BED36900CA92AA /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92419A224BED36900CA92AA /* BaseResponse.swift */; };
+		B92419A524BEE86700CA92AA /* AWNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92419A424BEE86700CA92AA /* AWNetManager.swift */; };
 		B925F709248612D000F76267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F708248612D000F76267 /* AppDelegate.swift */; };
 		B925F70D248612D000F76267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F70C248612D000F76267 /* ViewController.swift */; };
 		B925F712248612D200F76267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B925F711248612D200F76267 /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		6DD1A72197A3303705A66FD8 /* Pods-Awesome_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome_Swift.release.xcconfig"; path = "Target Support Files/Pods-Awesome_Swift/Pods-Awesome_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		8D91DB40F83A2B721B42094A /* libPods-Awesome_Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome_Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1A7BAF0CFD75CEDC741231 /* Pods-Awesome_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome_Swift.debug.xcconfig"; path = "Target Support Files/Pods-Awesome_Swift/Pods-Awesome_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		B924199E24BEC2C000CA92AA /* AWUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWUserManager.swift; sourceTree = "<group>"; };
+		B92419A024BEC2CE00CA92AA /* AWConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWConfigManager.swift; sourceTree = "<group>"; };
+		B92419A224BED36900CA92AA /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		B92419A424BEE86700CA92AA /* AWNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNetManager.swift; sourceTree = "<group>"; };
 		B925F705248612D000F76267 /* Awesome_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awesome_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B925F708248612D000F76267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B925F70C248612D000F76267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +213,7 @@
 		B925F71C248614FC00F76267 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B92419A424BEE86700CA92AA /* AWNetManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 		B925F71E2486151F00F76267 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B92419A224BED36900CA92AA /* BaseResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +293,8 @@
 			isa = PBXGroup;
 			children = (
 				B936121224A19BAA00F64482 /* AppTools.swift */,
+				B924199E24BEC2C000CA92AA /* AWUserManager.swift */,
+				B92419A024BEC2CE00CA92AA /* AWConfigManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -580,17 +592,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B936121324A19BAA00F64482 /* AppTools.swift in Sources */,
+				B924199F24BEC2C000CA92AA /* AWUserManager.swift in Sources */,
 				B949C9AC2486289500855B20 /* NSArray+YYAdd.m in Sources */,
 				B949C9B72486289500855B20 /* NSDate+YYAdd.m in Sources */,
 				B949C9C4248628C700855B20 /* MBProgressHUD.m in Sources */,
 				B936120624A18C0400F64482 /* Consts.swift in Sources */,
 				B949C9B02486289500855B20 /* YYMemoryCache.m in Sources */,
+				B92419A124BEC2CE00CA92AA /* AWConfigManager.swift in Sources */,
 				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
 				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
 				B936121F24A1ACF300F64482 /* DemoViewController0.swift in Sources */,
 				B949C9B32486289500855B20 /* UIDevice+YYAdd.m in Sources */,
+				B92419A324BED36900CA92AA /* BaseResponse.swift in Sources */,
 				B925F73224861CF500F76267 /* QMUIButton.m in Sources */,
 				B949C98B2486288B00855B20 /* TOSearchBar+Assets.m in Sources */,
+				B92419A524BEE86700CA92AA /* AWNetManager.swift in Sources */,
 				B988427324AC751000599D8E /* UIViewControllerExtension.swift in Sources */,
 				B949C9AD2486289500855B20 /* YYDiskCache.m in Sources */,
 				B949C9B22486289500855B20 /* UIColor+YYAdd.m in Sources */,
