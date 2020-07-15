@@ -15,4 +15,7 @@ class DemoViewController2: AWBaseViewController {
 
     }
 
+    deinit {
+        printLog("释放了")
+    }
 }

@@ -12,7 +12,16 @@ class AWLoginViewController: AWBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "登录"
     }
-
+    
+    
+    @IBAction func handleLoginAction() {
+        AppTools.shared.afterLoginSucceed()
+    }
+    
+    @IBAction func handleURLAction() {
+    }
+    
 }
+

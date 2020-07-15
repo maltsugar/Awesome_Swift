@@ -37,5 +37,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>是否允许此App使用蓝牙？</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>App需要您的同意,才能始终访问位置</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>App需要您的同意,才能始终访问位置</string>
+    <key>NSLocationUsageDescription</key>
+    <string>获取地理位置，精准推送服务</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>获取地理位置，精准推送服务</string>
 </dict>
 </plist>

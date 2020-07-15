@@ -14,5 +14,9 @@ class DemoViewController1: AWBaseViewController {
         super.viewDidLoad()
 
     }
+    
+    deinit {
+        printLog("释放了")
+    }
 
 }

@@ -12,6 +12,24 @@ class AWTabBarController: UITabBarController {
     fileprivate let normalColor = kRGBAColor(123, 123, 123)
     fileprivate let selectedColor = kHexAColor(0x26ab28)
     
+    override var selectedIndex: Int {
+        set {
+            var flag = true // 未登录情况不允许选定指定的index
+            if (newValue == 2) {
+//                flag = AWUserManager.shared().isUserLogined()
+                flag = false
+                AppTools.shared.forceLogin(animated: true)
+            }
+            
+            if (flag) {
+                super.selectedIndex = newValue
+            }
+            
+        }
+        get {
+            return super.selectedIndex
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,11 +86,34 @@ class AWTabBarController: UITabBarController {
     }
     
 
+    
 
 
 }
 
 //MARK:- UITabBarControllerDelegate
 extension AWTabBarController: UITabBarControllerDelegate {
-    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        var flag = true
+        if let idx = tabBarController.viewControllers?.firstIndex(of: viewController) {
+//            if (idx == 1) {
+//                // 仿微博，选指定的index,直接模态一个新vc
+//                let vc = UIViewController()
+//                vc.view.backgroundColor = .orange
+//                let nav = AWRootNavigationController(rootViewController: vc)
+//                nav.modalPresentationStyle = .fullScreen
+//                self.present(nav, animated: true, completion: nil)
+//                return false
+//            }
+            
+            
+            if (idx == 2) {
+                // 指定的index 需要校验登录状态
+                // flag = AWUserManager.shared().isUserLogined()
+                flag = false
+                AppTools.shared.forceLogin(animated: true)
+            }
+        }
+        return flag
+    }
 }
