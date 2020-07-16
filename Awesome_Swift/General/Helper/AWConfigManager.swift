@@ -47,8 +47,9 @@ class AWConfigManager {
     
     
     //MARK:- properties
-    var baseURL: String?
-    var path: String?
+    private var _baseURL: String?
+    private var _path: String?
+    
     var appID: String?
     
     var OSSPolicyBaseURL: String?
@@ -56,7 +57,33 @@ class AWConfigManager {
     
     let apiVersion = "V1.0" // 接口版本
     
+    var baseURL: String? {
+        set {
+            _baseURL = newValue
+            if _allowPersistent {
+                kUserDefaults.set(newValue, forKey: _kAWConfigManagerBaseURLKey)
+                kUserDefaults.synchronize()
+            }
+            setup()
+        }
+        get {
+            return _baseURL
+        }
+    }
     
+    var path: String? {
+        set {
+            _path = newValue
+            if _allowPersistent {
+                kUserDefaults.set(newValue, forKey: _kAWConfigManagerPathKey)
+                kUserDefaults.synchronize()
+            }
+            setup()
+        }
+        get {
+            return _path
+        }
+    }
     
     
     
@@ -66,21 +93,21 @@ class AWConfigManager {
         
         // 开发环境
         if kConfigEnv == .dev {
-            baseURL = "http://192.168.1.48"
-            path = "/api/service"
+            _baseURL = "http://192.168.1.48"
+            _path = "/api/service"
             appID = "br5hdo7evlvqvltd"  // dev
             
             
-            OSSPolicyBaseURL = baseURL
+            OSSPolicyBaseURL = _baseURL
             OSSPolicyPath = "op/oss/ossapptoken"
             
             if _allowPersistent {
                 if let info0 = kUserDefaults.string(forKey: _kAWConfigManagerBaseURLKey), info0.count > 0 {
-                    baseURL = info0
+                    _baseURL = info0
                 }
                 
                 if let info1 = kUserDefaults.string(forKey: _kAWConfigManagerPathKey), info1.count > 0 {
-                    path = info1
+                    _path = info1
                 }
                 
             }
@@ -93,37 +120,37 @@ class AWConfigManager {
         
         if kConfigEnv == .uat {
             // UAT环境
-            baseURL = "https://uatpxapi.yundasys.com:443"
-            path = "/gateway/interface"
+            _baseURL = "https://uatpxapi.yundasys.com:443"
+            _path = "/gateway/interface"
             appID = "vyhzro6s23ljdwhb"
             
-            OSSPolicyBaseURL = baseURL
+            OSSPolicyBaseURL = _baseURL
             OSSPolicyPath = "op/oss/ossapptoken"
         }
         
         if kConfigEnv == .prod {
             // 生产环境
-            baseURL = "https://op.51huochedai.com"
-            path = "/api/service"
+            _baseURL = "https://op.51huochedai.com"
+            _path = "/api/service"
             appID = "7n2acoc95yy73rs9"
             
-            OSSPolicyBaseURL = baseURL
+            OSSPolicyBaseURL = _baseURL
             OSSPolicyPath = "op/oss/ossapptoken"
         }
         
         // 配置请求库的baseURL、超时、证书、错误处理等
         let netMgr = AWNetManager.shared
-//        netMgr.config.debugPrintLog = true
+        // netMgr.config.debugPrintLog = true
         
         
-        netMgr.baseURL = (baseURL ?? "") + (path ?? "")
+        netMgr.baseURL = (_baseURL ?? "") + (_path ?? "")
         
         // 请求预处理
         netMgr.requestProcess = { (config) in
             
             config.sessionConfiguration.timeoutIntervalForRequest = 10
             config.encoding = JSONEncoding.default
-           
+            
             
             let token = "112333" // 从用户信息取token
             if token.count > 0 {

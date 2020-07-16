@@ -32,6 +32,9 @@ class AWLoginViewController: AWBaseViewController {
     }
     
     @IBAction func handleURLAction() {
+        let vc = AWChangeURLViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
 }
