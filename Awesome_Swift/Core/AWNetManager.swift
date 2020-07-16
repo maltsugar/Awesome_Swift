@@ -48,8 +48,7 @@ class AWNetManager {
         mgr.config.param = param
         mgr.requestProcess?(&mgr.config)
         
-        let dataReq = mgr.sessionMgr.request(url, method: .get, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders)
-        dataReq.responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
+        return mgr.sessionMgr.request(url, method: .get, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders).responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
             #if DEBUG
             if (mgr.config.debugPrintLog) {
                 debugPrint(res)
@@ -58,8 +57,6 @@ class AWNetManager {
             let processedRes = mgr.responseProcess?(res)
             response?(processedRes ?? res)
         }
-        return dataReq
-        
     }
     
     @discardableResult
@@ -70,8 +67,7 @@ class AWNetManager {
         
         mgr.requestProcess?(&mgr.config)
         
-        let dataReq = mgr.sessionMgr.request(url, method: .post, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders)
-        dataReq.responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
+        return mgr.sessionMgr.request(url, method: .post, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders).responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
             #if DEBUG
             if (mgr.config.debugPrintLog) {
                 debugPrint(res)
@@ -80,7 +76,6 @@ class AWNetManager {
             let processedRes = mgr.responseProcess?(res)
             response?(processedRes ?? res)
         }
-        return dataReq
     }
     
     

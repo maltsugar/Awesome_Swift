@@ -187,7 +187,9 @@ extension AWConfigManager {
         let configMgr = AWConfigManager.shared
         
         let version = kAppVersion()
-        let timeStamp = String(Int(Date().timeIntervalSince1970))
+        
+        // let timeStamp = String(Int(Date().unixTimestamp))
+        let timeStamp = String(CLongLong(round(Date().unixTimestamp * 1000)))
         
         var newParam = [String: Any]()
         newParam["version"] = configMgr.apiVersion
