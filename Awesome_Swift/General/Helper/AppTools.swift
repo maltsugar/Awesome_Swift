@@ -22,7 +22,7 @@ class AppTools {
     
     // 推荐用rootVC 显示登录页或者tabbarcontroller
     private var _loginNav: AWRootNavigationController?
-    private var _didShowLoginVC = false // 当前是登录页面
+    private var _didShowLoginVC = false // 当前已经弹出登录页面
     private var _tabBarController: AWTabBarController?
     
     private lazy var rootVC: UIViewController = {
@@ -76,7 +76,10 @@ class AppTools {
             setDisplayVC(vc: tabBarController)
         }
         
+        // 配置请求类，采用AWConfigManager不用宏 可以动态设置URL，便于调试
+        // 调用该方法会调用内部setup方法，设置通用配置
         _ = AWConfigManager.shared
+        
     }
     
     func afterLoginSucceed() {
@@ -101,18 +104,24 @@ class AppTools {
     }
     
     func forceLogin(animated: Bool, removeTabbarController: Bool = false) {
-        if _didShowLoginVC {
-            return
-        }
-        setDisplayVC(vc: self.loginNav, animated: animated)
-        _didShowLoginVC = true
-        if removeTabbarController {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                // 登录后需要刷新的话， 移除tabbarController
-                self.removeDisplayVC(vc: self.tabBarController)
-                self.tabBarController = nil
+        // 获取用户信息的标记
+        // let didCacheUserInfo = AWUserManager.shared.isUserLogined();
+        
+        let didCacheUserInfo = false
+        if !didCacheUserInfo, !_didShowLoginVC {
+            // 没有获取本地存储的 用户id 用户token
+            
+            setDisplayVC(vc: self.loginNav, animated: animated)
+            _didShowLoginVC = true
+            if removeTabbarController {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    // 登录后需要刷新的话， 移除tabbarController
+                    self.removeDisplayVC(vc: self.tabBarController)
+                    self.tabBarController = nil
+                }
             }
         }
+        
         
         
     }

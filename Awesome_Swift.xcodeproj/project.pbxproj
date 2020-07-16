@@ -79,6 +79,7 @@
 		B9A73FC024C0112100BB8F90 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FBF24C0112100BB8F90 /* UIViewExtensions.swift */; };
 		B9A73FC224C01BD600BB8F90 /* AWUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC124C01BD600BB8F90 /* AWUIViewExtension.swift */; };
 		B9A73FC424C01BE800BB8F90 /* AWUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC324C01BE800BB8F90 /* AWUIViewControllerExtension.swift */; };
+		B9A73FC724C029E800BB8F90 /* AWNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC624C029E800BB8F90 /* AWNotificationManager.swift */; };
 		B9B0B36624BFF32500E0B471 /* AWChangeURLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36424BFF32500E0B471 /* AWChangeURLViewController.swift */; };
 		B9B0B36724BFF32500E0B471 /* AWChangeURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */; };
 		B9B0B36924BFF7CB00E0B471 /* AWEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */; };
@@ -204,6 +205,7 @@
 		B9A73FBF24C0112100BB8F90 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		B9A73FC124C01BD600BB8F90 /* AWUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWUIViewExtension.swift; sourceTree = "<group>"; };
 		B9A73FC324C01BE800BB8F90 /* AWUIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWUIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B9A73FC624C029E800BB8F90 /* AWNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNotificationManager.swift; sourceTree = "<group>"; };
 		B9B0B36424BFF32500E0B471 /* AWChangeURLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWChangeURLViewController.swift; sourceTree = "<group>"; };
 		B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWChangeURLViewController.xib; sourceTree = "<group>"; };
 		B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWEmptyView.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				B936121224A19BAA00F64482 /* AppTools.swift */,
 				B924199E24BEC2C000CA92AA /* AWUserManager.swift */,
 				B92419A024BEC2CE00CA92AA /* AWConfigManager.swift */,
+				B9A73FC624C029E800BB8F90 /* AWNotificationManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */,
 				B9A73FAD24C010B000BB8F90 /* MutableCollectionExtensions.swift in Sources */,
 				B9A73FB324C010B000BB8F90 /* DoubleExtensions.swift in Sources */,
+				B9A73FC724C029E800BB8F90 /* AWNotificationManager.swift in Sources */,
 				B9A73FAA24C010B000BB8F90 /* FloatExtensions.swift in Sources */,
 				B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */,
 				B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */,
