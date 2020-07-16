@@ -13,7 +13,6 @@
 		B92419A324BED36900CA92AA /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92419A224BED36900CA92AA /* BaseResponse.swift */; };
 		B92419A524BEE86700CA92AA /* AWNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92419A424BEE86700CA92AA /* AWNetManager.swift */; };
 		B925F709248612D000F76267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F708248612D000F76267 /* AppDelegate.swift */; };
-		B925F70D248612D000F76267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925F70C248612D000F76267 /* ViewController.swift */; };
 		B925F712248612D200F76267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B925F711248612D200F76267 /* Assets.xcassets */; };
 		B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F713248612D200F76267 /* LaunchScreen.storyboard */; };
 		B925F73224861CF500F76267 /* QMUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F72F24861CF500F76267 /* QMUIButton.m */; };
@@ -100,7 +99,6 @@
 		B92419A424BEE86700CA92AA /* AWNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNetManager.swift; sourceTree = "<group>"; };
 		B925F705248612D000F76267 /* Awesome_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awesome_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B925F708248612D000F76267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B925F70C248612D000F76267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B925F711248612D200F76267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B925F714248612D200F76267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B925F716248612D200F76267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				B925F708248612D000F76267 /* AppDelegate.swift */,
-				B925F70C248612D000F76267 /* ViewController.swift */,
 				B925F713248612D200F76267 /* LaunchScreen.storyboard */,
 				B925F7212486161C00F76267 /* Awesome_Swift-Bridging-Header.h */,
 				B925F716248612D200F76267 /* Info.plist */,
@@ -769,7 +766,6 @@
 				B9B0B36924BFF7CB00E0B471 /* AWEmptyView.swift in Sources */,
 				B9A73FAF24C010B000BB8F90 /* DictionaryExtensions.swift in Sources */,
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
-				B925F70D248612D000F76267 /* ViewController.swift in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
 				B9A73FB824C010B000BB8F90 /* OptionalExtensions.swift in Sources */,
 				B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */,
