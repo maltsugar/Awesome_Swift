@@ -17,9 +17,14 @@ enum AWClearType {
 }
 
 enum AWLoginPresentType {
-    case none /// 不弹任何页面
-    case loginVC /// 弹出登录页面
-    case loginVCAndDestoryTabbarVC /// 弹出登录页，并且销毁TabbarController(重登录之后，刷新所有vc)
+    /// 不弹任何页面
+    case none
+    
+    /// 弹出登录页面
+    case loginVC
+    
+    /// 弹出登录页，并且销毁TabbarController(重登录之后，刷新所有vc)
+    case loginVCAndDestoryTabbarVC
 }
 
 
