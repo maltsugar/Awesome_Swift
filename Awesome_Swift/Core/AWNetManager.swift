@@ -11,10 +11,16 @@ import Foundation
 
 // 配置文件， 请求预处理闭包可以根据需求改变这些值
 class AWNetWorkConfig {
+    
     let sessionConfiguration = URLSessionConfiguration.default
     var requestHeaders = SessionManager.defaultHTTPHeaders
     var encoding: ParameterEncoding = URLEncoding.default
+    
+    /// 请求预处理，可以添加通用的参数
     var param: Parameters?
+    
+    /// DEBUG模式是否Log请求信息
+    var debugPrintLog = false
 }
 
 class AWNetManager {
@@ -23,9 +29,10 @@ class AWNetManager {
     // =================
     
     var baseURL: String? = ""
+    var config =  AWNetWorkConfig()
     var requestProcess: ((_ config: inout AWNetWorkConfig) -> Void)?
-    var responseProcess: (() -> Void)?
-    private var config =  AWNetWorkConfig()
+    var responseProcess: ((DataResponse<Any>) -> DataResponse<Any>)?
+    
     
     private lazy var sessionMgr: SessionManager = {
         config.sessionConfiguration.timeoutIntervalForRequest = 20 // 超时时间
@@ -33,35 +40,48 @@ class AWNetManager {
         return manager
     }()
     
-    
-    static func get(path: String? = nil, param: Parameters?) {
+    @discardableResult
+    static func get(path: String?, param: Parameters?, response: ((DataResponse<Any>) -> Void)? = nil) -> DataRequest {
         let mgr = AWNetManager.shared
         let url = mgr.getFullURL(urlString: path)
         
         mgr.config.param = param
         mgr.requestProcess?(&mgr.config)
         
-        mgr.sessionMgr.request(url, method: .get, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders).responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
-            printLog(res)
+        let dataReq = mgr.sessionMgr.request(url, method: .get, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders)
+        dataReq.responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
+            #if DEBUG
+            if (mgr.config.debugPrintLog) {
+                debugPrint(res)
+            }
+            #endif
+            let processedRes = mgr.responseProcess?(res)
+            response?(processedRes ?? res)
         }
+        return dataReq
+        
     }
     
-    static func post(path: String? = nil, param: Parameters?) {
+    @discardableResult
+    static func post(path: String?, param: Parameters?, response: ((DataResponse<Any>) -> Void)? = nil) -> DataRequest {
         let mgr = AWNetManager.shared
         let url = mgr.getFullURL(urlString: path)
         mgr.config.param = param
         
         mgr.requestProcess?(&mgr.config)
         
-        mgr.sessionMgr.request(url, method: .post, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders).responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
-            printLog(res)
+        let dataReq = mgr.sessionMgr.request(url, method: .post, parameters: mgr.config.param, encoding: mgr.config.encoding, headers: mgr.config.requestHeaders)
+        dataReq.responseJSON(queue: .main, options: .fragmentsAllowed) { (res) in
+            #if DEBUG
+            if (mgr.config.debugPrintLog) {
+                debugPrint(res)
+            }
+            #endif
+            let processedRes = mgr.responseProcess?(res)
+            response?(processedRes ?? res)
         }
-        
+        return dataReq
     }
-    
-    
-    
-    
     
     
     private func getFullURL(urlString: String?) -> String {

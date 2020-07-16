@@ -26,7 +26,9 @@ class AWLoginViewController: AWBaseViewController {
             "mobile":"29998862",
             "empCode":"29998862"
             ] as [String : Any]
-        AWNetManager.post(param: param)
+        AWNetManager.post(path: nil, param: param) { (res) in
+            printLog(res)
+        }
     }
     
     @IBAction func handleURLAction() {

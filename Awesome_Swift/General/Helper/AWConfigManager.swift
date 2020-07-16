@@ -34,6 +34,7 @@ let kGatewayTokenKey = "gatewayToken";
 
 
 class AWConfigManager {
+    
     static let shared = AWConfigManager()
     private init() {
         setup()
@@ -112,21 +113,29 @@ class AWConfigManager {
         
         // 配置请求库的baseURL、超时、证书、错误处理等
         let netMgr = AWNetManager.shared
-        if let _base = baseURL, let _path = path {
-            netMgr.baseURL = _base + _path
-        }
+//        netMgr.config.debugPrintLog = true
         
+        
+        netMgr.baseURL = (baseURL ?? "") + (path ?? "")
+        
+        // 请求预处理
         netMgr.requestProcess = { (config) in
+            
             config.sessionConfiguration.timeoutIntervalForRequest = 10
             config.encoding = JSONEncoding.default
-            let token = "112333"
+           
+            
+            let token = "112333" // 从用户信息取token
             if token.count > 0 {
                 config.requestHeaders["ydCommanderAuthToken"] = token
             }
             
             config.param = AWConfigManager.convertParam(orign: config.param)
-            
-            
+        }
+        
+        // 响应预处理
+        netMgr.responseProcess = { (res) -> DataResponse<Any> in
+            return res
         }
         
         
