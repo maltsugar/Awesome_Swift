@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AWLoginViewController" customModule="Awesome_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="testView" destination="bH9-Ps-Jrd" id="HjC-FP-K7l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB5-4f-LPo">
-                    <rect key="frame" x="145" y="209" width="31" height="30"/>
+                    <rect key="frame" x="144.5" y="209" width="31" height="30"/>
                     <state key="normal" title="登录"/>
                     <connections>
                         <action selector="handleLoginAction" destination="-1" eventType="touchUpInside" id="gTR-oh-XMD"/>
@@ -32,13 +33,23 @@
                         <action selector="handleURLAction" destination="-1" eventType="touchUpInside" id="Oy8-g9-zfV"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH9-Ps-Jrd">
+                    <rect key="frame" x="40" y="368" width="240" height="100"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="FXL-2R-AWb"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bH9-Ps-Jrd" secondAttribute="trailing" constant="40" id="AvX-5e-4KZ"/>
                 <constraint firstItem="CG2-QS-KLg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="NPh-dp-rLg"/>
                 <constraint firstItem="RB5-4f-LPo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="209" id="Og7-4w-WIF"/>
                 <constraint firstItem="RB5-4f-LPo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="V3U-h2-74E"/>
+                <constraint firstItem="bH9-Ps-Jrd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="dvi-jp-STj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CG2-QS-KLg" secondAttribute="trailing" constant="20" id="mE6-Pp-O8a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bH9-Ps-Jrd" secondAttribute="bottom" constant="100" id="yNM-pb-sfc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="132"/>
