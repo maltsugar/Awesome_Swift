@@ -80,6 +80,7 @@
 		B9A73FC424C01BE800BB8F90 /* AWUIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC324C01BE800BB8F90 /* AWUIViewControllerExtension.swift */; };
 		B9A73FC724C029E800BB8F90 /* AWNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC624C029E800BB8F90 /* AWNotificationManager.swift */; };
 		B9A73FCA24C04F8800BB8F90 /* UIView+JKToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FC824C04F8800BB8F90 /* UIView+JKToast.m */; };
+		B9A73FCE24C054CB00BB8F90 /* GYIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A73FCD24C054CB00BB8F90 /* GYIntroductionView.m */; };
 		B9B0B36624BFF32500E0B471 /* AWChangeURLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36424BFF32500E0B471 /* AWChangeURLViewController.swift */; };
 		B9B0B36724BFF32500E0B471 /* AWChangeURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */; };
 		B9B0B36924BFF7CB00E0B471 /* AWEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */; };
@@ -207,6 +208,8 @@
 		B9A73FC624C029E800BB8F90 /* AWNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNotificationManager.swift; sourceTree = "<group>"; };
 		B9A73FC824C04F8800BB8F90 /* UIView+JKToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKToast.m"; sourceTree = "<group>"; };
 		B9A73FC924C04F8800BB8F90 /* UIView+JKToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKToast.h"; sourceTree = "<group>"; };
+		B9A73FCC24C054CB00BB8F90 /* GYIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYIntroductionView.h; sourceTree = "<group>"; };
+		B9A73FCD24C054CB00BB8F90 /* GYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYIntroductionView.m; sourceTree = "<group>"; };
 		B9B0B36424BFF32500E0B471 /* AWChangeURLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWChangeURLViewController.swift; sourceTree = "<group>"; };
 		B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWChangeURLViewController.xib; sourceTree = "<group>"; };
 		B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWEmptyView.swift; sourceTree = "<group>"; };
@@ -316,6 +319,7 @@
 		B925F7202486153200F76267 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B9A73FCB24C054CB00BB8F90 /* GYIntroductionView */,
 				B949C9BE248628C700855B20 /* MBProgressHUD */,
 				B925F72C24861CF500F76267 /* QMUIKit_Lite */,
 				B949C9BA248628BC00855B20 /* Reachability */,
@@ -550,6 +554,15 @@
 			path = SwiftStdlib;
 			sourceTree = "<group>";
 		};
+		B9A73FCB24C054CB00BB8F90 /* GYIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				B9A73FCC24C054CB00BB8F90 /* GYIntroductionView.h */,
+				B9A73FCD24C054CB00BB8F90 /* GYIntroductionView.m */,
+			);
+			path = GYIntroductionView;
+			sourceTree = "<group>";
+		};
 		B9C6EE4524A3262F00BB9EA5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,6 +728,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A73FCE24C054CB00BB8F90 /* GYIntroductionView.m in Sources */,
 				B9A73FB624C010B000BB8F90 /* IntExtensions.swift in Sources */,
 				B9A73FCA24C04F8800BB8F90 /* UIView+JKToast.m in Sources */,
 				B9A73FBC24C010CE00BB8F90 /* DateExtensions.swift in Sources */,
