@@ -127,6 +127,7 @@ class AppTools {
     }
     
     
+    //MARK:- private funcs
     private func setDisplayVC(vc: UIViewController?, animated: Bool = false) {
         if let _vc = vc {
             rootVC.addChild(_vc)

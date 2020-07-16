@@ -8,6 +8,11 @@
 
 import Foundation
 
+
+enum AWBaseError: Error {
+    case noWindow
+}
+
 let kStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
 let kNavBarHeight = CGFloat(44)
 let kTopHeight = (kStatusBarHeight + kNavBarHeight)
@@ -129,6 +134,70 @@ func kDegreesToRadian(x: CGFloat) -> CGFloat {
 func kRadianToDegrees(radian: CGFloat) -> CGFloat {
     return (radian * 180.0) / CGFloat(Double.pi)
 }
+
+func mainWindow() throws ->  UIWindow  {
+    guard let delegate = kAppDelegate as? AppDelegate, let win = delegate.window else {
+        throw AWBaseError.noWindow
+    }
+    return win
+}
+
+func isIPhoneX() -> Bool {
+    var iPhoneX = false
+    // 先判断设备是否是iPhone/iPod
+    if UIDevice.current.userInterfaceIdiom != .phone {
+        return iPhoneX
+    }
+    if #available(iOS 11.0, *) {
+        
+        do {
+            let win = try mainWindow()
+            if win.safeAreaInsets.bottom > 0 {
+                iPhoneX = true
+            }
+        }catch {
+            printLog("没有window")
+        }
+    }
+    return iPhoneX
+}
+
+/// 设备安全区域
+func deviceSafeInsets() -> UIEdgeInsets {
+    if #available(iOS 11.0, *) {
+        
+        do {
+            let win = try mainWindow()
+            return win.safeAreaInsets
+        }catch {
+            printLog("没有window")
+        }
+    }
+    return .zero
+}
+
+/// 处理过的安全区域，适合需要顶部适配刘海屏的情况
+func deviceBanlancedSafeInsets() -> UIEdgeInsets {
+    var insets = UIEdgeInsets.zero
+    if #available(iOS 11.0, *) {
+        do {
+            let win = try mainWindow()
+            if win.safeAreaInsets.bottom > 0 {
+                // 只有刘海屏才返回真实safeAreaInsets
+                insets = win.safeAreaInsets
+            }
+            
+        }catch {
+            printLog("没有window")
+        }
+    }
+    return insets
+}
+
+
+
+
+
 
 
 // Print
