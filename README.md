@@ -1,6 +1,5 @@
 # 新项目模板
 ---
-#### [Swift版](https://github.com/maltsugar/Awesome_Swift)，欢迎使用
 
 ### 功能介绍
 
