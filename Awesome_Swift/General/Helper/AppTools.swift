@@ -8,6 +8,17 @@
 
 import Foundation
 
+// 清除类型
+enum AWClearType {
+    case all
+    case onlyMemory
+}
+
+enum AWLoginPresentType {
+    case none /// 不弹任何页面
+    case loginVC /// 弹出登录页面
+    case loginVCAndDestoryTabbarVC /// 弹出登录页，并且销毁TabbarController(重登录之后，刷新所有vc)
+}
 
 
 class AppTools {
@@ -84,16 +95,14 @@ class AppTools {
     
     func afterLoginSucceed() {
         // 保存用户id token 等
-        //        AWUserManager.shared.saveUserInfo()
+        AWUserManager.shared.saveUserInfo()
         
         self.dismissLoginVC()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 ) {
             self.setDisplayVC(vc: self.tabBarController)
         }
         
-        if let _cb = self.loginSucceedClosure {
-            _cb()
-        }
+        loginSucceedClosure?()
         
     }
     
@@ -105,9 +114,8 @@ class AppTools {
     
     func forceLogin(animated: Bool, removeTabbarController: Bool = false) {
         // 获取用户信息的标记
-        // let didCacheUserInfo = AWUserManager.shared.isUserLogined();
+        let didCacheUserInfo = AWUserManager.shared.isUserLogined()
         
-        let didCacheUserInfo = false
         if !didCacheUserInfo, !_didShowLoginVC {
             // 没有获取本地存储的 用户id 用户token
             
@@ -122,9 +130,30 @@ class AppTools {
             }
         }
         
-        
-        
     }
+    
+    func logout(tip: String?, clearType: AWClearType = .all, presentType: AWLoginPresentType = .none) {
+        // 清空用户id token等
+        
+        AWUserManager.shared.clearUserInfo() // 根据clearType 清除信息
+        
+        tabBarController?.selectedIndex = 0;
+        
+        if let _tip = tip, _tip.count > 0 {
+            if let window = try? mainWindow() {
+                window.jk_makeToast(_tip, duration: 0.5, position: JKToastPositionCenter)
+            }
+        }
+        
+        if presentType == .loginVCAndDestoryTabbarVC {
+            forceLogin(animated: true, removeTabbarController: true)
+        }else if presentType == .loginVC {
+            forceLogin(animated: true, removeTabbarController: false)
+        }
+        
+        logoutSucceedClosure?()
+    }
+    
     
     
     //MARK:- private funcs
