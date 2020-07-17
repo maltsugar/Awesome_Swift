@@ -17,9 +17,7 @@ class AWLoginViewController: AWBaseViewController {
         super.viewDidLoad()
         self.title = "登录"
         
-        testView.setCorners([.topRight, .bottomLeft, .bottomRight], radius: 10)
-        
-        testView.addShadow(ofColor: .brown, radius: 10, offset: CGSize(width: 10, height: 50), opacity: 1)
+       
     }
     
     

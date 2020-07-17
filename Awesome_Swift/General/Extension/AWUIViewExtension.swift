@@ -30,21 +30,21 @@ extension UIView {
     func setCorners(_ corners: UIRectCorner, radius: CGFloat) {
         
         if #available(iOS 11.0, *) {
-            var _coner = [CACornerMask]()
+            var _coner: CACornerMask = []
             if corners.contains(.topLeft) {
-                _coner.append(.layerMinXMinYCorner)
+                _coner.insert(.layerMinXMinYCorner)
             }
             if corners.contains(.topRight) {
-                _coner.append(.layerMaxXMinYCorner)
+                _coner.insert(.layerMaxXMinYCorner)
             }
             if corners.contains(.bottomLeft) {
-                _coner.append(.layerMinXMaxYCorner)
+                _coner.insert(.layerMinXMaxYCorner)
             }
             if corners.contains(.bottomRight) {
-                _coner.append(.layerMaxXMaxYCorner)
+                _coner.insert(.layerMaxXMaxYCorner)
             }
             layer.cornerRadius = radius
-            layer.maskedCorners = CACornerMask(_coner)
+            layer.maskedCorners = _coner
         } else {
             let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
             let mask = CAShapeLayer()
