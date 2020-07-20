@@ -8,7 +8,7 @@
 
 import Foundation
 
-private var kEmptyViewKey = 100
+private var kEmptyViewKey: Void?
 
 extension UIView {
     var emptyView: UIView? {
