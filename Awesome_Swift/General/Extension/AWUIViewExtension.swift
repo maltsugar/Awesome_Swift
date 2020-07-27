@@ -63,4 +63,17 @@ extension UIView {
         layer.shadowRadius = radius
         layer.shadowPath = shadowPath.cgPath
     }
+    
+    // 默认为AWEmptyView, 可以自定义emptyView
+    func showEmptyView() {
+        if let _v = emptyView {
+            self.addSubview(_v)
+            _v.snp.makeConstraints { (make) in
+                make.edges.equalTo(0)
+            }
+        }
+    }
+    func hideEmptyView() {
+        emptyView?.removeFromSuperview()
+    }
 }

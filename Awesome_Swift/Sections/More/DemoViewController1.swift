@@ -13,10 +13,7 @@ class DemoViewController1: AWBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addSubview(self.view.emptyView!)
-        self.view.emptyView?.snp.makeConstraints({ (make) in
-            make.edges.equalTo(0)
-        })
+        self.view.showEmptyView()
     }
     
     deinit {
