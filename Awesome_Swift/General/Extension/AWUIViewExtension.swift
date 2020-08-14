@@ -55,13 +55,11 @@ extension UIView {
     }
     
     func setShadow(color: UIColor, offset: CGSize, opacity: CGFloat, radius: CGFloat) {
-        let shadowPath = UIBezierPath(rect: bounds)
         layer.masksToBounds = false
         layer.shadowColor = color.cgColor
         layer.shadowOffset = offset
         layer.shadowOpacity = Float(opacity)
         layer.shadowRadius = radius
-        layer.shadowPath = shadowPath.cgPath
     }
     
     // 默认为AWEmptyView, 可以自定义emptyView
