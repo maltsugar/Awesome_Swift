@@ -54,5 +54,9 @@
     <string>获取地理位置，精准推送服务</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>获取地理位置，精准推送服务</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
 </dict>
 </plist>
