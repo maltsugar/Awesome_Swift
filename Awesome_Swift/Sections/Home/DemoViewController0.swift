@@ -41,9 +41,30 @@ class DemoViewController0: AWBaseViewController {
     
     
     @objc func handleBtnAction() {
-        if let url = URL(string: "https://www.sina.com.cn") {
-            webView.load(URLRequest(url: url))
+        //        if let url = URL(string: "https://www.sina.com.cn") {
+        //            webView.load(URLRequest(url: url))
+        //        }
+        
+        
+        
+        // test
+        let vc1 = AWBaseViewController()
+        let vc2 = AWBaseViewController()
+        
+        if let _tmp = self.navigationController?.viewControllers {
+            var tmp = _tmp
+            tmp.append(vc1)
+            tmp.append(vc2)
+            self.navigationController?.setViewControllers(tmp, animated: true)
+            
+            vc1.view.backgroundColor = kRandomColor()
+            vc1.title = "第二个页面"
+            
+            vc2.view.backgroundColor = kRandomColor()
+            vc2.title = "第3个页面"
         }
+        
+        
     }
     
      deinit {

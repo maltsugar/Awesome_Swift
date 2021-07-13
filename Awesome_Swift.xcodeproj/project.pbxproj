@@ -85,7 +85,7 @@
 		B9B0B36724BFF32500E0B471 /* AWChangeURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */; };
 		B9B0B36924BFF7CB00E0B471 /* AWEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */; };
 		B9B0B36B24BFF7D500E0B471 /* AWEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36A24BFF7D500E0B471 /* AWEmptyView.xib */; };
-		B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */; };
+		B9C6EE4424A3247A00BB9EA5 /* AWContainerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */; };
 		B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */; };
 		B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */; };
 		B9CFD94624B6B75B004F9B85 /* AWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */; };
@@ -214,7 +214,7 @@
 		B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWChangeURLViewController.xib; sourceTree = "<group>"; };
 		B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWEmptyView.swift; sourceTree = "<group>"; };
 		B9B0B36A24BFF7D500E0B471 /* AWEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWEmptyView.xib; sourceTree = "<group>"; };
-		B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWRootNavigationController.swift; sourceTree = "<group>"; };
+		B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWContainerNavigationController.swift; sourceTree = "<group>"; };
 		B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColor.h"; sourceTree = "<group>"; };
 		B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColor.m"; sourceTree = "<group>"; };
 		B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWLoginViewController.swift; sourceTree = "<group>"; };
@@ -335,7 +335,7 @@
 			children = (
 				B936120324A18B2100F64482 /* AWTabBarController.swift */,
 				B936120F24A197D300F64482 /* AWBaseViewController.swift */,
-				B9C6EE4324A3247A00BB9EA5 /* AWRootNavigationController.swift */,
+				B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -793,7 +793,7 @@
 				B9A73FB324C010B000BB8F90 /* DoubleExtensions.swift in Sources */,
 				B9A73FC724C029E800BB8F90 /* AWNotificationManager.swift in Sources */,
 				B9A73FAA24C010B000BB8F90 /* FloatExtensions.swift in Sources */,
-				B9C6EE4424A3247A00BB9EA5 /* AWRootNavigationController.swift in Sources */,
+				B9C6EE4424A3247A00BB9EA5 /* AWContainerNavigationController.swift in Sources */,
 				B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */,
 				B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */,
 				B9A73FA624C010B000BB8F90 /* ComparableExtensions.swift in Sources */,

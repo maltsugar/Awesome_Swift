@@ -1,5 +1,5 @@
 //
-//  AWRootNavigationController.swift
+//  AWContainerNavigationController.swift
 //  Awesome_Swift
 //
 //  Created by zgy on 2020/6/24.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AWRootNavigationController: RTRootNavigationController {
+class AWContainerNavigationController: RTRootNavigationController {
 
     override var childForStatusBarStyle: UIViewController? {
         get {

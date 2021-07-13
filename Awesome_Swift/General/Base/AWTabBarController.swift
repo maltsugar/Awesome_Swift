@@ -43,16 +43,16 @@ class AWTabBarController: UITabBarController {
         
         let vc1 = DemoViewController1()
         self.setupChildVC(childVC: vc1, title: "更多", image: "tabbar_1", selectedImage: "tabbar_1hl")
-//        vc1.view.showEmptyView()
+  
         
         let vc2 = DemoViewController2()
         self.setupChildVC(childVC: vc2, title: "我的", image: "tabbar_2", selectedImage: "tabbar_2hl")
         
         let temp = [vc0, vc1, vc2]
-        var navArr = [AWRootNavigationController]()
+        var navArr = [AWContainerNavigationController]()
         
         for vc in temp {
-            let nav = AWRootNavigationController(rootViewController: vc)
+            let nav = AWContainerNavigationController(rootViewController: vc)
             navArr.append(nav)
         }
         
@@ -100,7 +100,7 @@ extension AWTabBarController: UITabBarControllerDelegate {
 //                // 仿微博，选指定的index,直接模态一个新vc
 //                let vc = UIViewController()
 //                vc.view.backgroundColor = .orange
-//                let nav = AWRootNavigationController(rootViewController: vc)
+//                let nav = AWContainerNavigationController(rootViewController: vc)
 //                nav.modalPresentationStyle = .fullScreen
 //                self.present(nav, animated: true, completion: nil)
 //                return false
@@ -109,7 +109,7 @@ extension AWTabBarController: UITabBarControllerDelegate {
             
             if (idx == 2) {
                 // 指定的index 需要校验登录状态
-                // flag = AWUserManager.shared().isUserLogined()
+                flag = AWUserManager.shared.isUserLogined()
                 flag = false
                 AppTools.shared.forceLogin(animated: true)
             }

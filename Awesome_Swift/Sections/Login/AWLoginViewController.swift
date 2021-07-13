@@ -42,5 +42,9 @@ class AWLoginViewController: AWBaseViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    deinit {
+        printLog("11111")
+    }
+    
 }
 

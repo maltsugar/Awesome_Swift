@@ -89,6 +89,10 @@ public func kRGBAColor(_ r: Float, _ g: Float, _ b: Float, _ a: Float = 1.0) -> 
     return UIColor(red: CGFloat(CGFloat(r)/255.0), green: CGFloat(CGFloat(g)/255.0), blue: CGFloat(CGFloat(b)/255.0), alpha: CGFloat(a))
 }
 
+public func kRandomColor() -> UIColor {
+    return kRGBAColor(Float(arc4random()%256), Float(arc4random()%256), Float(arc4random()%256))
+}
+
 
 func kImageNamed(_ name: String) -> UIImage {
     guard let _img = UIImage(named: name) else {

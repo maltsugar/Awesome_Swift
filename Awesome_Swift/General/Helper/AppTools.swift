@@ -39,16 +39,13 @@ class AppTools {
     var logoutSucceedClosure: (() -> Void)?
     var introductionView: GYIntroductionView?
     
-    // 推荐用rootVC 显示登录页或者tabbarcontroller
-    private var _loginNav: AWRootNavigationController?
-    private var _didShowLoginVC = false // 当前已经弹出登录页面
-    private var _tabBarController: AWTabBarController?
     
-    private lazy var rootVC: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .white
-        return vc
-    }()
+    private var _rootNav: RTRootNavigationController?
+    private var _didShowLoginVC = false // 当前已经弹出登录页面
+    
+    private var _tabBarController: AWTabBarController?
+    private var _loginVC: AWLoginViewController?
+
     
     
     // OC式懒加载
@@ -64,17 +61,17 @@ class AppTools {
             _tabBarController = newValue
         }
     }
-    private var loginNav: AWRootNavigationController? {
+    private var loginVC: AWLoginViewController? {
         get {
-            if (nil == _loginNav) {
-                let loginVC = AWLoginViewController()
-                _loginNav = AWRootNavigationController(rootViewController: loginVC)
-                _loginNav?.modalPresentationStyle = .fullScreen
+            if (nil == _loginVC) {
+                _loginVC = AWLoginViewController()
+                _loginVC?.modalPresentationStyle = .fullScreen
+                _loginVC?.navigationController?.isNavigationBarHidden = true
             }
-            return _loginNav
+            return _loginVC
         }
         set {
-            _loginNav = newValue
+            _loginVC = newValue
         }
     }
     
@@ -85,15 +82,14 @@ class AppTools {
         guard let window = kAppDelegate?.window else {
             return
         }
-        
-        
-        window?.rootViewController = rootVC
-        
+        _rootNav = RTRootNavigationController()
+
         if (loginVC) {
-            setDisplayVC(vc: loginNav)
+            _rootNav?.pushViewController(self.loginVC!, animated: false)
         }else {
-            setDisplayVC(vc: tabBarController)
+            _rootNav = RTRootNavigationController(rootViewController: self.tabBarController!)
         }
+        window?.rootViewController = _rootNav
         
         // 配置请求类，采用AWConfigManager不用宏 可以动态设置URL，便于调试
         // 调用该方法会调用内部setup方法，设置通用配置
@@ -128,20 +124,17 @@ class AppTools {
         // 保存用户id token 等
         AWUserManager.shared.saveUserInfo()
         
-        self.dismissLoginVC()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 ) {
-            self.setDisplayVC(vc: self.tabBarController)
-        }
+        let tmp = [self.tabBarController!]
+        self._rootNav?.setViewControllers(tmp, animated: false)
+        self.loginVC = nil
+        self._didShowLoginVC = false
+        self.tabBarController?.navigationController?.isNavigationBarHidden = true
+       
         
         loginSucceedClosure?()
         
     }
-    
-    func dismissLoginVC() {
-        removeDisplayVC(vc: self.loginNav, animated: true)
-        self.loginNav = nil
-        _didShowLoginVC = false
-    }
+
     
     func forceLogin(animated: Bool, removeTabbarController: Bool = false) {
         // 获取用户信息的标记
@@ -149,15 +142,12 @@ class AppTools {
         
         if !didCacheUserInfo, !_didShowLoginVC {
             // 没有获取本地存储的 用户id 用户token
+            let tmp = [self.loginVC!]
+            self._rootNav?.setViewControllers(tmp, animated: false)
             
-            setDisplayVC(vc: self.loginNav, animated: animated)
             _didShowLoginVC = true
             if removeTabbarController {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    // 登录后需要刷新的话， 移除tabbarController
-                    self.removeDisplayVC(vc: self.tabBarController)
-                    self.tabBarController = nil
-                }
+                self.tabBarController = nil
             }
         }
         
@@ -210,46 +200,5 @@ class AppTools {
             }
         }
     }
-    
-    
-    
-    //MARK:- private funcs
-    private func setDisplayVC(vc: UIViewController?, animated: Bool = false) {
-        if let _vc = vc {
-            rootVC.addChild(_vc)
-            rootVC.view.addSubview(_vc.view)
-            _vc.view.frame = rootVC.view.bounds
-            if animated {
-                _vc.view.transform = CGAffineTransform(translationX: 0, y: kScreenHeight)
-                UIView.animate(withDuration: 0.25, delay: 0, options: [.curveEaseOut], animations: {
-                    _vc.view.transform = CGAffineTransform(translationX: 0, y: 0)
-                })
-                
-            }
-            
-        }
-    }
-    
-    private func removeDisplayVC(vc: UIViewController?, animated: Bool = false) {
-        if let _vc = vc {
-            if animated {
-                
-                UIView.animate(withDuration: 0.25, delay: 0, options: [.curveEaseOut], animations: {
-                    _vc.view.transform = CGAffineTransform(translationX: 0, y: kScreenHeight)
-                }) { (_) in
-                    _vc.removeFromParent()
-                    _vc.view.removeFromSuperview()
-                }
-                
-            }else {
-                _vc.removeFromParent()
-                _vc.view.removeFromSuperview()
-            }
-            
-        }
-    }
-    
-    
-    
     
 }

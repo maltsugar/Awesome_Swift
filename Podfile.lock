@@ -1,20 +1,20 @@
 PODS:
   - Alamofire (4.9.1)
-  - IQKeyboardManager (6.5.5)
+  - IQKeyboardManager (6.5.6)
   - KakaJSON (1.1.2)
-  - MJRefresh (3.3.1)
-  - RTRootNavigationController (0.7.2):
-    - RTRootNavigationController/Core (= 0.7.2)
-  - RTRootNavigationController/Core (0.7.2)
+  - MJRefresh (3.6.1)
+  - RTRootNavigationController (0.8.0):
+    - RTRootNavigationController/Core (= 0.8.0)
+  - RTRootNavigationController/Core (0.8.0)
   - RxAlamofire (5.1.0):
     - RxAlamofire/Core (= 5.1.0)
   - RxAlamofire/Core (5.1.0):
     - Alamofire (~> 4.8)
     - RxSwift (~> 5.0)
-  - RxSwift (5.1.0)
-  - SDWebImage (5.6.0):
-    - SDWebImage/Core (= 5.6.0)
-  - SDWebImage/Core (5.6.0)
+  - RxSwift (5.1.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -40,15 +40,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
-  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  RTRootNavigationController: 8344c2352d6d40fa370d0366efae2c84a945213f
+  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
+  RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
-  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
-  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: d7c48f3f46e751c8cf4d4c72490470441dae108f
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
