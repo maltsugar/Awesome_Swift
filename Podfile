@@ -6,7 +6,6 @@ target 'Awesome_Swift' do
     pod 'SnapKit'
     pod 'RxAlamofire'
     pod 'MJRefresh'
-    pod 'RTRootNavigationController'
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
     pod 'KakaJSON'

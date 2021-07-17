@@ -34,12 +34,5 @@ class AWBaseViewController: UIViewController {
     }
   
     
-    override func rt_customBackItem(withTarget target: Any!, action: Selector!) -> UIBarButtonItem! {
-//        let barBtnItem = UIBarButtonItem(title: NSLocalizedString("Back", comment: ""), style: .plain, target: target, action: action)
-        let barBtnItem = UIBarButtonItem(image: kImageNamed(kAWNavBackImgName), style: .plain, target: target, action: action)
-        return barBtnItem
-    }
-    
-    
 
 }

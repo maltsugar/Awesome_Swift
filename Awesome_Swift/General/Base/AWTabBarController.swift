@@ -49,10 +49,10 @@ class AWTabBarController: UITabBarController {
         self.setupChildVC(childVC: vc2, title: "我的", image: "tabbar_2", selectedImage: "tabbar_2hl")
         
         let temp = [vc0, vc1, vc2]
-        var navArr = [AWContainerNavigationController]()
+        var navArr = [AWNavigationController]()
         
         for vc in temp {
-            let nav = AWContainerNavigationController(rootViewController: vc)
+            let nav = AWNavigationController(rootViewController: vc)
             navArr.append(nav)
         }
         

@@ -4,7 +4,7 @@
 
 #import "QMUIButton.h"
 #import "IQKeyboardManager.h"
-#import "RTRootNavigationController.h"
 #import "UIImage+JKColor.h"
 #import "UIView+JKToast.h"
 #import "GYIntroductionView.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"

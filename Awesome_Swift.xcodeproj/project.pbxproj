@@ -85,8 +85,10 @@
 		B9B0B36724BFF32500E0B471 /* AWChangeURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */; };
 		B9B0B36924BFF7CB00E0B471 /* AWEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */; };
 		B9B0B36B24BFF7D500E0B471 /* AWEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0B36A24BFF7D500E0B471 /* AWEmptyView.xib */; };
-		B9C6EE4424A3247A00BB9EA5 /* AWContainerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */; };
+		B9C6EE4424A3247A00BB9EA5 /* AWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4324A3247A00BB9EA5 /* AWNavigationController.swift */; };
 		B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */; };
+		B9C6F0CA26A2C1600042797C /* AWUIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6F0C726A2BB370042797C /* AWUIBarButtonItemExtension.swift */; };
+		B9C6F0CE26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C6F0CD26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m */; };
 		B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */; };
 		B9CFD94624B6B75B004F9B85 /* AWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */; };
 /* End PBXBuildFile section */
@@ -214,9 +216,12 @@
 		B9B0B36524BFF32500E0B471 /* AWChangeURLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWChangeURLViewController.xib; sourceTree = "<group>"; };
 		B9B0B36824BFF7CB00E0B471 /* AWEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWEmptyView.swift; sourceTree = "<group>"; };
 		B9B0B36A24BFF7D500E0B471 /* AWEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWEmptyView.xib; sourceTree = "<group>"; };
-		B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWContainerNavigationController.swift; sourceTree = "<group>"; };
+		B9C6EE4324A3247A00BB9EA5 /* AWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWNavigationController.swift; sourceTree = "<group>"; };
 		B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColor.h"; sourceTree = "<group>"; };
 		B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColor.m"; sourceTree = "<group>"; };
+		B9C6F0C726A2BB370042797C /* AWUIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWUIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		B9C6F0CC26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		B9C6F0CD26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		B9CFD94324B6B75B004F9B85 /* AWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWLoginViewController.swift; sourceTree = "<group>"; };
 		B9CFD94424B6B75B004F9B85 /* AWLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AWLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,6 +324,7 @@
 		B925F7202486153200F76267 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B9C6F0CB26A2C7F60042797C /* FDFullscreenPopGesture */,
 				B9A73FCB24C054CB00BB8F90 /* GYIntroductionView */,
 				B949C9BE248628C700855B20 /* MBProgressHUD */,
 				B925F72C24861CF500F76267 /* QMUIKit_Lite */,
@@ -335,7 +341,7 @@
 			children = (
 				B936120324A18B2100F64482 /* AWTabBarController.swift */,
 				B936120F24A197D300F64482 /* AWBaseViewController.swift */,
-				B9C6EE4324A3247A00BB9EA5 /* AWContainerNavigationController.swift */,
+				B9C6EE4324A3247A00BB9EA5 /* AWNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				B9C6EE4524A3262F00BB9EA5 /* Category */,
 				B9A73FC124C01BD600BB8F90 /* AWUIViewExtension.swift */,
 				B9A73FC324C01BE800BB8F90 /* AWUIViewControllerExtension.swift */,
+				B9C6F0C726A2BB370042797C /* AWUIBarButtonItemExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -566,12 +573,21 @@
 		B9C6EE4524A3262F00BB9EA5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				B9A73FC924C04F8800BB8F90 /* UIView+JKToast.h */,
-				B9A73FC824C04F8800BB8F90 /* UIView+JKToast.m */,
 				B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */,
 				B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */,
+				B9A73FC924C04F8800BB8F90 /* UIView+JKToast.h */,
+				B9A73FC824C04F8800BB8F90 /* UIView+JKToast.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B9C6F0CB26A2C7F60042797C /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				B9C6F0CC26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.h */,
+				B9C6F0CD26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
 		B9CFD94224B6B72B004F9B85 /* Login */ = {
@@ -745,6 +761,7 @@
 				B92419A124BEC2CE00CA92AA /* AWConfigManager.swift in Sources */,
 				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
 				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
+				B9C6F0CE26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B9A73FA424C010B000BB8F90 /* SignedIntegerExtensions.swift in Sources */,
 				B936121F24A1ACF300F64482 /* DemoViewController0.swift in Sources */,
 				B9A73F8A24C0106400BB8F90 /* ColorExtensions.swift in Sources */,
@@ -788,12 +805,13 @@
 				B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */,
 				B925F709248612D000F76267 /* AppDelegate.swift in Sources */,
 				B9A73FB824C010B000BB8F90 /* OptionalExtensions.swift in Sources */,
+				B9C6F0CA26A2C1600042797C /* AWUIBarButtonItemExtension.swift in Sources */,
 				B9CFD94524B6B75B004F9B85 /* AWLoginViewController.swift in Sources */,
 				B9A73FAD24C010B000BB8F90 /* MutableCollectionExtensions.swift in Sources */,
 				B9A73FB324C010B000BB8F90 /* DoubleExtensions.swift in Sources */,
 				B9A73FC724C029E800BB8F90 /* AWNotificationManager.swift in Sources */,
 				B9A73FAA24C010B000BB8F90 /* FloatExtensions.swift in Sources */,
-				B9C6EE4424A3247A00BB9EA5 /* AWContainerNavigationController.swift in Sources */,
+				B9C6EE4424A3247A00BB9EA5 /* AWNavigationController.swift in Sources */,
 				B9C6EE4824A3264D00BB9EA5 /* UIImage+JKColor.m in Sources */,
 				B949C9AF2486289500855B20 /* YYKVStorage.m in Sources */,
 				B9A73FA624C010B000BB8F90 /* ComparableExtensions.swift in Sources */,

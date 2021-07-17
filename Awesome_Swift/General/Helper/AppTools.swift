@@ -40,7 +40,7 @@ class AppTools {
     var introductionView: GYIntroductionView?
     
     
-    private var _rootNav: RTRootNavigationController?
+    private var _rootNav: AWNavigationController?
     private var _didShowLoginVC = false // 当前已经弹出登录页面
     
     private var _tabBarController: AWTabBarController?
@@ -82,12 +82,12 @@ class AppTools {
         guard let window = kAppDelegate?.window else {
             return
         }
-        _rootNav = RTRootNavigationController()
+        _rootNav = AWNavigationController()
 
         if (loginVC) {
             _rootNav?.pushViewController(self.loginVC!, animated: false)
         }else {
-            _rootNav = RTRootNavigationController(rootViewController: self.tabBarController!)
+            _rootNav = AWNavigationController(rootViewController: self.tabBarController!)
         }
         window?.rootViewController = _rootNav
         

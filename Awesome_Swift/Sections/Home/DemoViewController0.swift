@@ -51,11 +51,9 @@ class DemoViewController0: AWBaseViewController {
         let vc1 = AWBaseViewController()
         let vc2 = AWBaseViewController()
         
-        if let _tmp = self.navigationController?.viewControllers {
-            var tmp = _tmp
-            tmp.append(vc1)
-            tmp.append(vc2)
-            self.navigationController?.setViewControllers(tmp, animated: true)
+        self.navigationController?.pushViewController(vc1, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            self.navigationController?.pushViewController(vc2, animated: true)
             
             vc1.view.backgroundColor = kRandomColor()
             vc1.title = "第二个页面"
@@ -64,6 +62,8 @@ class DemoViewController0: AWBaseViewController {
             vc2.title = "第3个页面"
         }
         
+        
+  
         
     }
     

@@ -11,6 +11,12 @@ import Foundation
 private var kEmptyViewKey: Void?
 
 extension UIView {
+    
+    
+    
+    
+    
+    
     var emptyView: UIView? {
         set {
             objc_setAssociatedObject(self, &kEmptyViewKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
