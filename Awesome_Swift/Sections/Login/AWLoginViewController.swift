@@ -17,7 +17,6 @@ class AWLoginViewController: AWBaseViewController {
         super.viewDidLoad()
         self.title = "登录"
         
-       
     }
     
     

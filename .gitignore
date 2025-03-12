@@ -1,0 +1,17 @@
+##ignore this file##
+*~
+.DS_Store
+*.xcbkptlist
+*.xcuserstate
+Pods/
+xcschememanagement.plist
+IDEWorkspaceChecks.plist
+project.xcworkspace
+xcuserdata
+# .gitignore
+WorkspaceSettings.xcsettings
+
+# node
+node_modules/
+dist/
+npm-debug.log

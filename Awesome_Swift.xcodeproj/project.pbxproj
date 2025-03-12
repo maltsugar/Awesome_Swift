@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		B925F715248612D200F76267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B925F713248612D200F76267 /* LaunchScreen.storyboard */; };
 		B925F73224861CF500F76267 /* QMUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F72F24861CF500F76267 /* QMUIButton.m */; };
 		B925F73824861FEA00F76267 /* NSAttributedString+QMUILite.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */; };
+		B932E3B72D81128800C4C8C0 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = B932E3B62D81128800C4C8C0 /* NSString+Tools.m */; };
 		B936120424A18B2100F64482 /* AWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120324A18B2100F64482 /* AWTabBarController.swift */; };
 		B936120624A18C0400F64482 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120524A18C0400F64482 /* Consts.swift */; };
 		B936121024A197D300F64482 /* AWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936120F24A197D300F64482 /* AWBaseViewController.swift */; };
@@ -112,6 +113,8 @@
 		B925F73124861CF500F76267 /* QMUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIButton.h; sourceTree = "<group>"; };
 		B925F73624861FEA00F76267 /* NSAttributedString+QMUILite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QMUILite.m"; sourceTree = "<group>"; };
 		B925F73724861FEA00F76267 /* NSAttributedString+QMUILite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QMUILite.h"; sourceTree = "<group>"; };
+		B932E3B52D81128800C4C8C0 /* NSString+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		B932E3B62D81128800C4C8C0 /* NSString+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
 		B936120324A18B2100F64482 /* AWTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWTabBarController.swift; sourceTree = "<group>"; };
 		B936120524A18C0400F64482 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		B936120F24A197D300F64482 /* AWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBaseViewController.swift; sourceTree = "<group>"; };
@@ -573,6 +576,8 @@
 		B9C6EE4524A3262F00BB9EA5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B932E3B52D81128800C4C8C0 /* NSString+Tools.h */,
+				B932E3B62D81128800C4C8C0 /* NSString+Tools.m */,
 				B9C6EE4624A3264D00BB9EA5 /* UIImage+JKColor.h */,
 				B9C6EE4724A3264D00BB9EA5 /* UIImage+JKColor.m */,
 				B9A73FC924C04F8800BB8F90 /* UIView+JKToast.h */,
@@ -761,6 +766,7 @@
 				B92419A124BEC2CE00CA92AA /* AWConfigManager.swift in Sources */,
 				B949C9B92486289500855B20 /* UIControl+YYAdd.m in Sources */,
 				B949C9B62486289500855B20 /* NSData+YYAdd.m in Sources */,
+				B932E3B72D81128800C4C8C0 /* NSString+Tools.m in Sources */,
 				B9C6F0CE26A2C7F60042797C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				B9A73FA424C010B000BB8F90 /* SignedIntegerExtensions.swift in Sources */,
 				B936121F24A1ACF300F64482 /* DemoViewController0.swift in Sources */,

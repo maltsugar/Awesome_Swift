@@ -3,9 +3,6 @@ PODS:
   - IQKeyboardManager (6.5.6)
   - KakaJSON (1.1.2)
   - MJRefresh (3.6.1)
-  - RTRootNavigationController (0.8.0):
-    - RTRootNavigationController/Core (= 0.8.0)
-  - RTRootNavigationController/Core (0.8.0)
   - RxAlamofire (5.1.0):
     - RxAlamofire/Core (= 5.1.0)
   - RxAlamofire/Core (5.1.0):
@@ -21,18 +18,16 @@ DEPENDENCIES:
   - IQKeyboardManager
   - KakaJSON
   - MJRefresh
-  - RTRootNavigationController
   - RxAlamofire
   - SDWebImage
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - IQKeyboardManager
     - KakaJSON
     - MJRefresh
-    - RTRootNavigationController
     - RxAlamofire
     - RxSwift
     - SDWebImage
@@ -43,12 +38,11 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
-  RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: d7c48f3f46e751c8cf4d4c72490470441dae108f
+PODFILE CHECKSUM: 5b07dbe423960465aca00beb9b4dbaff508cb71b
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.16.2

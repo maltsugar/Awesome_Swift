@@ -8,3 +8,4 @@
 #import "UIView+JKToast.h"
 #import "GYIntroductionView.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
+#import "NSString+Tools.h"
