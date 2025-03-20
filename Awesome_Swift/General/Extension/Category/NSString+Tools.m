@@ -108,6 +108,10 @@ static BOOL __stringDebug = NO;
 
 + (NSArray<NSTextCheckingResult *> *)matchRegex:(NSString *)pattern inString:(NSString *)text
 {
+    if (!pattern || !text) {
+        return @[];
+    }
+    
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
     
